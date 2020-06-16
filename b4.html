@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p style="text-align: center;" id="draw"></p>
+</body>
+<script>
+    let hcn = "";
+    let a , b;
+    for (a = -3; a <= 3; a++) {
+        for (b = -15; b <= 15; b++) {
+            if (Math.abs(b) === 15 || Math.abs(a) === 3) {
+                hcn += "*";
+            } else {
+                hcn += "&nbsp;&nbsp";
+            }
+        }
+        hcn += "<br/>";
+    }
+    document.getElementById("draw").innerHTML = hcn;
+
+</script>
+</html>
